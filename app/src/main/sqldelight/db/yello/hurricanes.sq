@@ -1,0 +1,39 @@
+CREATE TABLE hurricane_sql_delight (
+    id TEXT NOT NULL,
+    name TEXT NOT NULL,
+    date TEXT NOT NULL,
+    time TEXT NOT NULL,
+    event TEXT NOT NULL,
+    status TEXT NOT NULL,
+    latitude TEXT NOT NULL,
+    longitude TEXT NOT NULL,
+    maximum_wind TEXT NOT NULL,
+    minimum_pressure TEXT NOT NULL,
+    low_wind_ne INTEGER NOT NULL,
+    low_wind_se INTEGER NOT NULL,
+    low_wind_nw INTEGER NOT NULL,
+    low_wind_sw INTEGER NOT NULL,
+    moderate_wind_ne INTEGER NOT NULL,
+    moderate_wind_se INTEGER NOT NULL,
+    moderate_wind_nw INTEGER NOT NULL,
+    moderate_wind_sw INTEGER NOT NULL,
+    high_wind_ne INTEGER NOT NULL,
+    high_wind_se INTEGER NOT NULL,
+    high_wind_nw INTEGER NOT NULL,
+    high_wind_sw INTEGER NOT NULL
+);
+
+selectAll:
+SELECT * FROM hurricane_sql_delight;
+
+insert:
+INSERT INTO hurricane_sql_delight(id, name, date, time, event, status,
+latitude, longitude, maximum_wind, minimum_pressure, low_wind_ne, low_wind_se,
+low_wind_nw, low_wind_sw, moderate_wind_ne, moderate_wind_se, moderate_wind_nw,
+moderate_wind_sw, high_wind_ne, high_wind_se, high_wind_nw, high_wind_sw)
+VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+
+insert_row:
+INSERT INTO hurricane_sql_delight
+VALUES ?;
+
