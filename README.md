@@ -19,5 +19,6 @@
     - Refactoring/finding usages
     - Code autocompletion
     - Generating Queries after editing, compiler editors in the IDE
-    - SQLDelight incudes a runtime `ColumnAdapter` for storing an enum as TEXT
+ * SQLDelight incudes a runtime `ColumnAdapter` for storing an enum as TEXT
+ * SQLDelight is also pretty flexible in generation by creating object implementation support i.e. importing data from CSV objects
     
